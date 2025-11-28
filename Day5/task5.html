@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: auto;
+        }
+        input, button{
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+    </Style>
+</head>
+<body>
+    <h1> Forms</h1>
+    <form action="">
+
+        <fieldset>
+
+            <legend> Student Information</legend>
+
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Enter your name" value="name">
+        <label for="age">Age</label>
+        <input type="number" name="age" placeholder="Enter your age" value="age">
+        <label for="dob"> DOB</label>
+        <input type="date" name="dob" placeholder="Enter your date of birth" value="dob"> <br>
+        <label for="Phnumber"> Phone number</label>  
+        <input type="tel" name="Phnumber" placeholder="Enter your phone number" value="Phnumber"> <br>
+        <label for="email"> Email</label>
+        <input type="email" name="email" placeholder="Enter your email" value="email">
+        <label for="address"> Address</label>
+        <input type="text" name="address" placeholder="Enter your address" value="address">
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Enter your password" value="password">
+        </fieldset>
+        <label for="course">Course you want to choose</label>
+        
+        <select name="course">
+            <option selected disabled> Select your course</option>
+            <option value="Frontend Development"> Frontend Development</option>
+            <option value="Backend Development"> Backend Development</option>
+            <option value="Fullstack Development"> Fullstack Development</option>
+            <option value="Data Science"> Data Science</option>
+            <option value="Machine Learning"> Machine Learning</option>
+            <option value="DevOps"> DevOps</option>
+            <option value="Cloud Computing"> Cloud Computing</option>
+            <option value="Cyber Security"> Cyber Security</option>
+        </select>
+
+        <label for="Mode"> Which mode you want to take the course</label>
+        <label> Online </label>
+        <input type="radio" name="mode" value="online">
+        <label> Offline </label>
+        <input type="radio" name="mode" value="offline">
+
+
+
+     
+        
+        <button type="submit"> Submit</button>
+
+
+    </form>
+</body>
+</html>
