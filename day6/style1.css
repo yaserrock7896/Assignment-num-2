@@ -1,0 +1,87 @@
+input[type="email"]{
+    border: 3px solid rgb(220, 15, 179);
+    background-color: lightblue;
+}
+
+input:focus{
+    border: 2px solid #00b894;
+    box-shadow: 0 0 10px #00b894;
+    outline: none;
+    background-color: rgb(210, 225, 219);
+}
+
+p::first-letter {
+    font-size: 200%;
+    color: red;
+}
+
+body,input { text-align: center; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    background-color:aliceblue;
+    word-spacing: 5px;
+    
+}
+.animated-button,button[type="submit"] {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.animated-button:hover {background-color: #3e8e41}
+
+button[type="submit"]:hover {background-color: #3e8e41}
+
+
+button[type="submit"] {
+  transition: all 0.3s ease 0s;
+}
+.animated-button {
+  transition: all 0.3s ease 0s;
+}
+
+.animated-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+button[type="submit"]:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+::placeholder {
+    color:rebeccapurple;
+    opacity: 1; 
+}
+
+h1::before {
+        font-family: "Font Awesome 6 Free"; /* Or "Font Awesome 6 Solid", "Font Awesome 6 Brands" */
+        content: "\f007"; /* Replace with the Unicode for your desired icon */
+        margin-right: 10px; /* Adjust spacing as needed */
+        font-weight: 900; /* For solid icons */
+        color: #333; 
+    }
+p::selection {
+    background: yellow;
+    color: black;
+}
+
+.ali{
+    width: 200px;;
+    padding: 50px;
+    border: 2px solid black;
+    margin: auto;
+    ;
+}
+
+    
