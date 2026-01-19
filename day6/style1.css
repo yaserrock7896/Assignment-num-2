@@ -65,10 +65,10 @@ button[type="submit"]:active {
 }
 
 h1::before {
-        font-family: "Font Awesome 6 Free"; /* Or "Font Awesome 6 Solid", "Font Awesome 6 Brands" */
-        content: "\f007"; /* Replace with the Unicode for your desired icon */
-        margin-right: 10px; /* Adjust spacing as needed */
-        font-weight: 900; /* For solid icons */
+        font-family: "Font Awesome 6 Free"; 
+        content: "\f007"; 
+        margin-right: 10px; 
+        font-weight: 900; 
         color: #333; 
     }
 p::selection {
@@ -77,11 +77,11 @@ p::selection {
 }
 
 .ali{
-    width: 200px;;
+    width: 200px;
     padding: 50px;
     border: 2px solid black;
     margin: auto;
-    ;
+    background-color: limegreen;
 }
 
     

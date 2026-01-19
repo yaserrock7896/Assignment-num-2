@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        
+            background-color: antiquewhite;
+        }
+
+        .layout div{
+            background-color: lightgreen;
+            border: 1px solid black;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            
+        
+         }
+
+        .layout{
+            display:grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: 10vh 70vh 10vh;
+            text-align: center;
+            grid-template-areas: 
+            "h h h h h"
+            "s1 m m m s2"
+            "f f f f f";
+            gap:10px;
+            
+        }
+        .header{
+            grid-area:h;
+            
+            background-color: lightcoral;
+            padding: 10px;
+        }
+        .sidebar1{
+            grid-area:s1;
+            background-color: lightblue;
+            padding: 10px;
+        }
+        .main{
+            grid-area:m;
+            background-color: lightgoldenrodyellow;
+            padding: 10px;
+        }
+        .sidebar2{
+            grid-area:s2;
+            background-color: lightpink;
+            padding: 10px;
+        }
+        .footer{
+            grid-area:f; 
+        
+            background-color: lightgray;
+            text-align: center;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="header">Header</div>
+        <div class="sidebar1">Navigation</div>
+        <div class="main">Main Content</div>
+        <div class="sidebar2">Sidebar</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

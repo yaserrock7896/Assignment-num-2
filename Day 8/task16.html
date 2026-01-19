@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            background-color: blueviolet;
+        
+        }
+        .one{
+            background-color: lightseagreen;
+            height: 100px;
+            font-family: Arial, sans-serif;
+            
+        }
+        .two{
+            background-color: lightcoral;
+            height: 400px;
+            font-family: Arial, sans-serif;
+            margin-top: 10px;
+        }
+        .three{
+            background-color: lightblue;
+            height: 400px;
+            font-family: Arial, sans-serif;
+            margin-top: 10px;
+        }
+
+        @media screen and (max-width:900px) {
+            .one{flex-basis: 100%;
+            background-color: red;}
+            .two{ flex-basis: 32.5%;
+            background-color: green;}
+            .three{ flex-basis: 21%;
+            background-color: yellow;}
+
+        }
+            
+       @media screen and (max-width:600px)  {
+            .one{flex-basis: 100%;
+            background-color: violet;}
+            .two{flex-basis: 60%;
+            background-color: orange;}
+            .three{flex-basis: 45%;
+            background-color: pink;}
+        }  
+        
+        @media screen and (max-width:300px) {
+            .one{flex-basis: 100%;
+            background-color: darkgoldenrod;}
+            .two{flex-basis:70%;
+            background-color:brown}
+            .three{flex-basis: 80;
+            background-color: darkcyan;}
+        }
+
+            
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box one"> First box</div>
+        <div class="box two"> Second box A</div>
+        <div class="box two"> Second box B</div>
+        <div class="box two"> Second box C</div>
+        <div class="box three"> Third box A</div>
+        <div class="box three"> Third box B</div>
+        <div class="box three"> Third box C</div>
+        <div class="box three"> Third box D</div>
+    </div>
+</body>
+</html>

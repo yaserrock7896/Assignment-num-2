@@ -1,0 +1,36 @@
+
+
+.sam{
+  position:absolute;
+  width: 150px;
+  height: 150px;
+
+}
+
+.one {
+  
+  background: red;
+  color: white;
+  z-index: 3;
+  left:20px;
+    top: 20px;
+  
+}
+
+.two {
+
+  background: yellow;
+  color: black;
+   z-index: 2;
+  left: 80px;
+  top: 80px;
+ 
+}
+
+.three{
+    background: black;
+    color: white;
+    z-index: 1;
+    left: 120px;
+    top: 120px;
+}

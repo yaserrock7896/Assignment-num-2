@@ -1,0 +1,12 @@
+.line{
+    position: relative;
+    line-height: 40px;
+    padding: 50px;
+    margin: 50px;
+    border: 2px solid black;
+}
+.line1{
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+}
