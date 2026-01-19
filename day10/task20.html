@@ -7,14 +7,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Task Manager</h1>
-        <div class="input-container">
-            <input type="text" id="taskInput" placeholder="What needs to be done?">
-            <button onclick="addTask()">Add Task</button>
-        </div>
-        <ul id="taskList"></ul>
+    <h1>Stylish Product Card </h1>
+    <div id="navbar">
+       <a class="active" href="javascript:void(0)">Home</a>
+       <a href="javascript:void(0)">News</a>
+       <a href="javascript:void(0)">Contact</a>
+   </div>
+
+    <div class="product-card">
+      <div class="sale-badge">SALE</div>
+      <img src="t-shirt.jpg" alt="Product Name" class="product-image">
+      <div class="product-info">
+        <h3 class="product-title">Stylish T-Shirt</h3>
+        <p class="product-price">
+            <span class="original-price">$29.99</span>
+            <span class="sale-price">$19.99</span>
+        </p>
+      <a href="http://www.amazon.in"> <button class="buy-button">Buy Now</button> </a>
     </div>
-    <script src="script.js"></script>    
+</div>
+
+
+
+
+    <div class="container">
+        <h2> T-Shirts collections </h2>
+        <div class="box-1"> <img src="t-shirt 1.jpg" alt="T-Shirt 1"></div>
+        <div class="box-2"> <img src="t-shirt 2.jpg" alt="T-Shirt 2"></div>
+        <div class="box-3"> <img src="t-shirt 3.jpg" alt="T-Shirt 3"> </div>
+
+   <button class="contact-btn"> <a href="mailto:contact@example.com" >Contact Us</a> </button>
+
+        
+    </div>  
 </body>
 </html>
