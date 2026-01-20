@@ -109,7 +109,7 @@
     left: 50px;
     width: 150px;
     height: 1000px;
-    opacity: 0.5;
+    opacity: 0.8;
     z-index: 1;
 }
 .box-2 {
@@ -118,7 +118,7 @@
     left: 100px;
     width: 150px;
     height: 500px;
-    opacity: 0.5;
+    opacity: 0.7;
     z-index: 2;
 }
 .box-3 {
