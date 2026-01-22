@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shainsha Yaser Ali | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="number" id="num1" placeholder="Enter first number">
-    <input type="number" id="num2" placeholder="Enter second number">
-    <br>
-    <br>
-    <button onclick="calculate()">calculate</button>
-    <p id="result"></p>
-    <script src="srcipt.js">
 
-    </script>
+<header class="navbar">
+  <h2 class="logo">Shainsha Yaser Ali - Python Developer</h2>
+  <input type="checkbox" id="toggle">
+  <label for="toggle" class="menu">&#9776;</label>
+
+  <nav class="links">
+    <a href="#profile">Profile</a>
+    <a href="#gallery">Work</a>
+    <a href="#blog">Blog</a>
+  </nav>
+</header>
+
+<section id="profile" class="profile fade-up">
+  <img src="./yas.JPG" width="100%" height="100%" alt="Profile">
+  <h3>Shainsha Yaser Ali</h3>
+  <p>Python Developer</p>
+  <button>Hire Me</button>
+</section>
+
+<section id="gallery" class="gallery fade-up">
+  <img src="./pic.jpg" alt="Work 1" height="100%">
+  <img src="./ai.jpg" alt="Work 2" height="100%">
+  <img src="./bu.jpg" alt="Work 3">
+  <img src="./be.jpg" alt="Work 4" height="100%">
+</section>
+
+<section id="blog" class="blog fade-up">
+  <article>
+    <h3>Building Responsive UI</h3>
+    <p>I focus on mobile-first, performance-optimized web interfaces using modern CSS.</p>
+  </article>
+
+  <aside>
+    <h4>Skills</h4>
+    <p>HTML • CSS • Javascript • React </p>
+  </aside>
+</section>
 
 </body>
 </html>

@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+/* GLOBAL */
+body {
+  background: #f9fafb;
+  color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #111;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+/* Nav hover underline */
+.links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #007bff;
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.links a:hover::after {
+  width: 100%;
+}
+
+.menu {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked + .menu + .links {
+  display: flex;
+}
+
+/* PROFILE CARD */
+.profile {
+  background: white;
+  max-width: 320px;
+  margin: 40px auto;
+  padding: 25px;
+  text-align: center;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.profile img {
+  border-radius: 20%;
+  margin-bottom: 10px;
+}
+
+.profile button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.profile button:hover {
+  background: #0056d2;
+  transform: scale(1.05);
+}
+
+/* GALLERY */
+.gallery {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* BLOG */
+.blog {
+  padding: 30px;
+}
+
+.blog article,
+.blog aside {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+
+.blog article:hover,
+.blog aside:hover {
+  transform: translateY(-5px);
+}
+
+
+.fade-up {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .blog {
+    display: flex;
+    gap: 20px;
+  }
+
+  article {
+    flex: 3;
+  }
+
+  aside {
+    flex: 1;
+  }
+}
